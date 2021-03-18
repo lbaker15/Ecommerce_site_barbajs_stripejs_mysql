@@ -1,0 +1,112 @@
+@import '_variables';
+html {
+    scroll-behavior: smooth;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 5vh;
+    .container {
+        width: 300px;
+        height: 600px;
+        margin-left: -70px;
+        margin-top: 25px;
+        opacity: 0.85;
+    }
+    .blurCircle1 {
+        background: $orange;
+        width: 360px;
+        height: 400px;
+        filter:blur(44px);
+        border-radius: 50%;
+        opacity: 0.8;
+        margin-left: -50px;
+        z-index: -1;
+        position: relative;
+        }
+    .blurCircle2 {
+        background: $hotPink;
+        width: 400px;
+        height: 400px;
+        filter:blur(45px);
+        border-radius: 50%;
+        opacity: 1;
+        margin-top: -300px;
+        z-index: 1;
+        position: relative;
+    }
+    .blurCircle3 {
+        background: $yellow;
+        width: 200px;
+        height: 320px;
+        filter:blur(40px);
+        border-radius: 50%;
+        opacity: 0.65;
+        margin-top: -500px;
+        margin-left: 215px;
+        transform: rotate(-25deg);
+        z-index: -3;
+        position: relative;
+    }
+    .blurCircle4 {
+        background: $red;
+        width: 300px;
+        height: 300px;
+        filter:blur(50px);
+        border-radius: 50%;
+        opacity: .91;
+        margin-top: -175px;
+        margin-left: 75px;
+        transform: rotate(-25deg);
+        z-index: 2;
+        position: relative;
+    }
+    .text {
+        font-family: sans-serif;
+        font-size: 85px;
+        text-transform: uppercase;
+        margin-top: -400px;
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        width: 900px;
+    }
+    .textTwo {
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 400px;
+        position: absolute;
+        z-index: 10;
+        text-align: center;
+        width: 450px;
+    }
+    .arrows {
+        margin-top: 415px;
+        position: absolute;
+        margin-left: -75vw;
+        font-size: 30px;
+        font-weight: 200;
+    }
+    .lightMode {
+        margin-top: 417.5px;
+        position: absolute;
+        margin-left: 75vw;
+        font-size: 30px;
+        font-weight: 300;
+        display: flex;
+        p {
+            font-size: 18px;
+            font-family: poppins, sans-serif;
+            margin-top: 1px;
+            padding-right: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}

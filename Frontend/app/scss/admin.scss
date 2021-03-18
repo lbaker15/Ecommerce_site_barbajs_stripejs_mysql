@@ -1,0 +1,37 @@
+h1 {
+    font-family: poppins, sans-serif;
+    margin-top: -50px; text-align: center;
+}
+#protected {
+    display: flex; gap: 10px; flex-direction: column; align-items: center;
+    .widget {
+        width: 400px; height: auto; background: rgb(255, 254, 254, 0.25);
+        border-radius: 5px; font-family: poppins, sans-serif;
+        display: flex; flex-direction: column; justify-content: center;
+        align-items: center; text-align: center; padding: 50px 30px;
+        .details {
+            display: flex; flex-direction: column;
+            align-items: space-around; width: 350px; height: 65px;
+            #margin {
+                margin-top: -15px;
+            }
+        }
+    }
+}
+.bottom {
+    margin-bottom: 10px;
+}
+#bold {
+    font-weight: 700;
+}
+.prods {
+    flex-direction: column; display: flex;
+    margin-top: 10px;
+}
+#semibold {
+    font-weight:600;
+}
+.prodItem {
+    width: 300px;
+    display: flex; justify-content: space-between;
+}

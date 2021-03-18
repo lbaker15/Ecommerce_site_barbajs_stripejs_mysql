@@ -1,0 +1,269 @@
+@import '_variables';
+@import 'one';
+@import 'about';
+@import 'two';
+@import 'three';
+@import 'four';
+@import 'five';
+@import 'six';
+@import 'splash';
+@import 'signIn';
+@import 'products';
+@import 'cart';
+@import 'checkout';
+@import 'admin';
+@import 'contact';
+
+body {
+  width: 99vw;
+  overflow-x: hidden;
+  background: whitesmoke;
+}
+.content {
+  visibility: hidden;
+}
+
+#root {
+  background: transparent;
+  width: 500px;
+  height: 72.5px;
+  position: absolute;
+  right:0;
+  top:0;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  .fa-shopping-cart {
+      color: black; font-size: 42.5px;
+      margin-top: 12px;
+      padding-right: 40px;
+      margin-left: -100px;
+  }
+  .signInIcon {
+      color: black; font-size: 22px; text-transform: uppercase;
+      margin-top: 20px;
+      padding-right: 50px;
+      font-family: sans-serif; font-weight: 300; 
+  }
+}
+
+.loader {
+  z-index: 90000000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background:black;
+  top: 0;
+  left: 0;
+}
+
+.att {
+    font-size: 12px;
+    margin-top: 675px;
+    position: absolute;
+  }
+
+  nav img {
+    margin: 0 auto;
+
+  }
+  
+  /*NAV*/
+  #navbar {
+    position: fixed;
+    height: 67.5px;
+    width: 100vw;
+    z-index: 100;
+    background: transparent;
+    // border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+    }
+  
+  .one {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -150px;
+    display: none;
+    z-index: -1;
+    width: 550px;
+    height: 350px;
+  }
+  
+  .two {
+    position: absolute;
+    display: none;
+    z-index: -1;
+    width: 550px;
+    height: 350px;
+  }
+  
+  .three {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 500px;
+  }
+  
+  .four {
+    position: absolute;
+    display: none;
+    width: 550px;
+    height: 350px;
+  }
+  
+  .five {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 500px;
+  }
+
+  /*NAV MENU*/
+  header { 
+  position: relative;    
+  margin-left: -2.5vw;
+  }
+  nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:100vh;
+  width: 100vw;
+  z-index: 900000;
+  visibility: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  font-family: poppins; 
+  font-weight: 300;
+  }
+  .closeButton {
+  color: #fff;
+  font-size: 48px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor:pointer;
+  }
+  .burgerIcon {
+  position: fixed;
+  top: 20px;
+  left: 35px;
+  cursor: pointer;
+  z-index: 20;
+  }
+  .burgerLine {
+  width: 65px;
+  height: 5px;
+  border-radius: 100px;
+  background-color: #000;
+  margin-bottom: 10px;
+  }
+  .navMenu {
+    margin-top: -25px;
+  }
+  .navMenu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 55px;
+  display: inline-block;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  border-bottom:1px solid rgba(201, 61, 10, 0.25);
+  transition: 0.2s ease all;
+  }
+  .navMenu li {
+    list-style: none;
+  }
+  .navMenu li:last-child a {
+  border-bottom:none;    
+  }
+  .navMenu li:hover a {
+  background-color: #f5005686;
+  }
+.displayNone {
+  display: none;
+}
+.loaderDiv {
+  width: 100vw; height: 100vh;
+  position: fixed; top: 0; left: 0;
+  z-index: 9000000;
+  background: black;
+  display:block;
+}
+
+
+.blur1 {
+  width: calc(255px + 10vw); height: calc(255px + 10vw);
+  background: $hotPink; border-radius: 50%; filter: blur(110px);
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -6vw;
+  z-index: -1;
+}
+.blur2 {
+  width: calc(300px + 10vw); height: calc(300px + 10vw);
+  background: $orange; border-radius: 50%; filter: blur(120px);
+  position: fixed;
+  right: calc(-125px + 5vw);
+  top: 350px;
+  z-index: -1;
+}
+.blur3 {
+  width: calc(150px + 10vw); height: calc(150px + 10vw);
+  background: $yellow; border-radius: 50%; filter: blur(140px);
+  position: fixed;
+  left: calc(-100px + 5vw);
+  top: 300px;
+  z-index: -1;
+}
+.blur4 {
+  width: calc(150px + 10vw); height: calc(150px + 10vw);
+  background: $pink; border-radius: 50%; filter: blur(140px);
+  position: fixed;
+  right: calc(-100px + 5vw);
+  top: 100px;
+  z-index: -1;
+}
+.blur5 {
+  width: calc(175px + 10vw); height: calc(175px + 10vw);
+  background: $orange; border-radius: 50%; filter: blur(130px);
+  position: fixed;
+  left: calc(100px + 10vw);
+  top: -100px;
+  z-index: -1;
+}
+.blur6 {
+  width: calc(255px + 10vw); height: calc(255px + 10vw);
+  background: $red; border-radius: 50%; filter: blur(calc(250px - 5vw));
+  position: fixed;
+  left: calc(50px + 40vw);
+  top: 400px;
+  z-index: -1;
+}
+.circles {
+  .blur1 {
+      position: fixed;
+      filter: blur(125px);
+      transform: scale(1.1);
+      left: -50px;
+  }
+  .blur2 {
+      filter: blur(140px);
+      top: 450px;
+  }
+  .blur6 {
+      top: -100px;
+      left: 40vw;
+  }
+}
+.blur6Contact {
+  width: calc(100px + 10vw); height: calc(100px + 10vw);
+  background: $red; border-radius: 50%; filter: blur(120px);
+  position: fixed;
+  left: calc(50px + 80vw);
+  top: 305px;
+  z-index: -1;
+}

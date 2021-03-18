@@ -1,0 +1,140 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  width: 98vw;
+  height: 100vh;
+  margin-top: 15px;
+  overflow-x: hidden; }
+
+.colOne {
+  height: 100vh;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column; }
+
+.colTwo {
+  width: 50%;
+  margin-left: 2.5vw; }
+
+.form {
+  width: 86%;
+  height: 65vh;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 7.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 4vh;
+  padding-left: 2vw; padding-right: 2vw;
+  margin-top: 2vh; }
+
+.header {
+  font-family: 'poppins';
+  font-size: 30px; font-weight: 700;
+  color: var(--font-color); margin-top: 50px; }
+
+.smallFlex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 15px;
+  align-items: center; }
+
+label {
+  font-family: 'poppins';
+  color: var(--font-color); }
+
+.lineOne {
+  flex-direction: column;
+  display: flex;
+  width: 43%;
+  align-items: center;
+  margin-right: 4%; }
+
+.lineTwo {
+  flex-direction: column;
+  display: flex;
+  width: 43%;
+  align-items: center; }
+
+.inputSmall {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #dbdbdb;
+  box-shadow: 0.5px 0.5px 2px #cfcfcf;
+  border-radius: 3px; }
+
+.input {
+  width: 90%;
+  margin-bottom: 25px;
+  height: 50px;
+  border: 2px solid #dbdbdb;
+  box-shadow: 0.5px 0.5px 2px #cfcfcf;
+  border-radius: 3px; }
+
+.inputLarge {
+  width: 90%;
+  margin-bottom: 25px;
+  height: 150px;
+  border: 2px solid #dbdbdb;
+  box-shadow: 0.5px 0.5px 2px #cfcfcf;
+  border-radius: 3px;
+  margin-bottom: 30px; }
+
+.submit {
+  width: 90%;
+  background: $hotPink;
+  color: white;
+  font-family: 'poppins';
+  padding: 12.5px 10px;
+  border: none;
+  box-shadow: none;
+  border-radius: 3px;
+  font-size: 16px;
+  text-transform: uppercase; }
+
+/*MAP*/
+.address {
+  font-family: 'poppins';
+  margin-top: 3vh;
+  color: var(--font-color);
+  margin-bottom: 20px; }
+
+.address h1 {
+  margin-bottom: 0px; }
+
+.address p {
+  margin-right: 5vw; }
+
+.address h3 {
+  font-size: 22px;
+  margin-bottom: 7.5px; }
+
+#map {
+  height: 43vh;
+  width: 42.5vw;
+  margin-top: 0vh; }
+
+.headerContact {
+  max-width: 300px; }
+
+.underline {
+  height: 20px;
+  z-index: -1;
+  width: 85%;
+  margin-top: -25px;
+  opacity: 1; }
+
+.underlineBlog {
+  background: var(--yellow); }
+
+.underlineContact {
+  background: var(--aqua); }
+
+.blur6Contact {
+    
+}

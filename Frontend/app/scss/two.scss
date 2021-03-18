@@ -1,0 +1,91 @@
+@import '_variables';
+// @import '../imagesNew/2.jpg';
+// section two
+.grid2 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1; 
+    z-index: 1;
+    background: whitesmoke;
+}
+.innergrid2 {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 35vh);
+}
+.left2 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+    .image {
+        transition: transform 1.2s ease;
+        backface-visibility: hidden; -webkit-backface-visibility: hidden;
+        outline: none; user-select: none; border: none;
+        width: calc(425px + ((100vw - 425px) / 10) );
+        height: calc(575px + ((100vw - 575px) / 10) );
+        margin-top: 16vh;
+        background-image: url('../imagesNew/8.jpg');
+        background-size: cover;
+    }
+}
+.right2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 4;
+    background: whitesmoke;
+    .image {
+        transition: transform 1.2s ease;
+        width: calc(425px + ((100vw - 425px) / 10) );
+        height: calc(575px + ((100vw - 575px) / 10) );
+        margin-top: 80vh;
+        margin-left: 2.5vw;
+        position: absolute;
+        background-image: url('../imagesNew/9.jpg');
+        background-size: cover;
+    }
+    .text {
+        font-family: poppins, sans-serif;
+        position: absolute;
+        width: calc(425px + ((100vw - 425px) / 10) );
+        margin-left: 2.5vw;
+        margin-top: 12.5vh;
+        h3 {
+            font-weight: 300;
+            font-size: 20px;
+            width: 90%;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 50px;
+        }
+        button {
+            font-family: poppins, sans-serif;
+            font-size: 22.5px;
+            margin-top: 5vh;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid black;
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

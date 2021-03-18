@@ -1,0 +1,237 @@
+
+.gridSignin {
+    width: 99vw;
+    grid-template-columns: repeat(4, 24.5vw);
+    grid-template-rows: 100vh;
+    height: 90vh;
+    background: whitesmoke;
+    top:0;
+    left: 0;
+    .grid1 {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 1;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        .blurCircle1 {
+            background: $orange;
+            width: 500px;
+            height: 500px;
+            filter:blur(100px);
+            border-radius: 50%;
+            opacity: 0.8;
+            margin-left: -750px;
+            margin-top: -150px;
+            position: absolute;
+            z-index: 2;
+        }
+        .blurCircle2 {
+            background: $hotPink;
+            width: 350px;
+            height: 350px;
+            filter:blur(150px);
+            border-radius: 50%;
+            opacity: 0.9;
+            margin-left: -925px;
+            margin-top: 175px;
+            position: absolute;
+            z-index: 2;
+        }
+        .blurCircle3 {
+            background: $red;
+            width: 360px;
+            height: 300px;
+            filter:blur(75px);
+            border-radius: 50%;
+            opacity: 0.5;
+            margin-left: 250px;
+            margin-top: -500px;
+            position: absolute;
+            z-index: 2;
+        }
+        .blurCircle4 {      
+            background: $yellow;
+            width: 360px;
+            height: 300px;
+            filter:blur(175px);
+            border-radius: 50%;
+            opacity: 0.7;
+            margin-left: 1000px;
+            margin-top: -550px;
+            position: absolute;
+            z-index: 2;
+        }
+        .blurCircle42 {      
+            background: $orange;
+            width: 360px;
+            height: 400px;
+            filter:blur(75px);
+            border-radius: 50%;
+            opacity: 0.5;
+            margin-left:700px;
+            margin-top: -450px;
+            position: absolute;
+            z-index: 2;
+        }
+        .blurCircle5 {
+            background: $hotPink;
+            width: 700px;
+            height: 500px;
+            filter:blur(175px);
+            border-radius: 50%;
+            opacity: 0.6;
+            margin-left: -50px;
+            margin-top: 350px;
+            position: absolute;
+            z-index: 1;
+        }
+        .blurCircle6 {
+            background: $yellow;
+            width: 600px;
+            height: 600px;
+            filter:blur(75px);
+            border-radius: 50%;
+            opacity: 0.6;
+            margin-left: -1200px;
+            margin-top: -700px;
+            position: absolute;
+            z-index: 1;
+        }
+        .blurCircle7 {
+            background: $hotPink;
+            width: 700px;
+            height: 700px;
+            filter:blur(175px);
+            border-radius: 50%;
+            opacity: 0.6;
+            margin-left: -1200px;
+            margin-top: 550px;
+            position: absolute;
+            z-index: 1;
+        }
+        .blurCircle8 {
+            background: $purple;
+            width: 300px;
+            height: 300px;
+            filter:blur(105px);
+            border-radius: 50%;
+            opacity: 0.6;
+            margin-left: -250px;
+            margin-top: -600px;
+            position: absolute;
+            z-index: 1;
+        }
+        .blurCircle9 {
+            background: $red;
+            width: 500px;
+            height: 300px;
+            filter:blur(105px);
+            border-radius: 50%;
+            opacity: 0.6;
+            margin-left: 1250px;
+            margin-top: 500px;
+            position: absolute;
+            z-index: 1;
+        }
+        .blurCircle0 {
+            background: linear-gradient(-30deg, rgba(245,0,86,1) 0%, rgb(255, 128, 9) 60%, rgba(255,237,43,1) 100%);
+            width: 500px;
+            height: 500px;
+            filter:blur(85px);
+            border-radius: 50%;
+            opacity: 0.8;
+            margin-left: 900px;
+            margin-top: 250px;
+            position: absolute;
+            z-index: 0;
+        }
+        .flexCol {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: poppins;
+            height: 500px;
+            width: 600px;
+            background:rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+            border-radius: 7.5px;
+            align-items: center;
+            justify-content: center;
+            margin-top: -5vh;
+            h1{
+                font-weight: 600;
+                margin-top: 75px;
+            }
+        }
+        .signIn {
+            margin-top: -85px;
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            input {
+                flex-direction: column;
+                width: 400px;
+                height: 45px;
+                margin-bottom: 45px;
+                border-radius: 0px;
+                border: none;
+                border-bottom: 1.5px solid black;
+                background: transparent;
+                user-select: none; outline: none;
+                font-family: poppins, sans-serif; font-size: 16px; color: black;
+            }
+            ::-webkit-input-placeholder {
+                color: rgb(87, 87, 87);
+            }
+            label {
+                font-family: poppins;
+                font-size: 20px;
+                font-weight: 300;
+            }
+            button {
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                background: black;
+                color: white;
+                font-family: poppins;
+                font-weight: 300;
+                border: none; user-select: none; outline: none;
+                margin-top: 30px; border-radius: 5px;
+            }
+        }
+        #logout {
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                background: black;
+                color: white;
+                font-family: poppins;
+                font-weight: 300;
+                border: none; user-select: none; outline: none;
+                border-radius: 5px;
+        }
+        #signup {
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            background: black;
+            color: white;
+            font-family: poppins;
+            font-weight: 300;
+            border: none; user-select: none; outline: none;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+        }
+    }
+}
